@@ -1,0 +1,27 @@
+{
+	"name": "icarus",
+	"version": "0.0.0",
+	"description": "",
+	"author": "Matt Zabriskie",
+	"license": "MIT",
+	"main": "index.js",
+	"scripts": {
+		"test": "grunt jshint nodeunit",
+		"start": "node index"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git://github.com/mzabriskie/icarus.git"
+	},
+	"bugs": {
+		"url": "https://github.com/mzabriskie/icarus/issues"
+	},
+	"devDependencies": {
+		"grunt": "0.4.3",
+		"grunt-contrib-jshint": "0.8.0",
+		"grunt-contrib-nodeunit": "0.3.2"
+	},
+	"dependencies": {
+		"express": "3.5.0"
+	}
+}
