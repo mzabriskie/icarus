@@ -13,7 +13,9 @@ function expectFailure(test, callback) {
 module.exports = {
 	testParseURL: function (test) {
 		test.deepEqual(Serve.parseURL('/foo/a/b/c.js'), {module: 'foo', version: 'HEAD', file: 'a/b/c.js'});
+		test.deepEqual(Serve.parseURL('/foo/a.b.c/a/b/c.js'), {module: 'foo', version: 'HEAD', file: 'a.b.c/a/b/c.js'});
 		test.deepEqual(Serve.parseURL('/foo/1.2.3/a/b/c.js'), {module: 'foo', version: '1.2.3', file: 'a/b/c.js'});
+		test.deepEqual(Serve.parseURL('/foo/v1.2.3/a/b/c.js'), {module: 'foo', version: '1.2.3', file: 'a/b/c.js'});
 		test.deepEqual(Serve.parseURL('/foo/111.222.333/a/b/c.js'), {module: 'foo', version: '111.222.333', file: 'a/b/c.js'});
 
 		expectFailure(test, function () { Serve.parseURL(''); });
