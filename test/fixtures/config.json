@@ -1,0 +1,6 @@
+{
+	"icarus": {
+		"url": "http://github.com/mzabriskie/icarus.git",
+		"files": "lib/**/*.js"
+	}
+}
