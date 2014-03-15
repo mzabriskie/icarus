@@ -1,1 +1,1 @@
-# Icarus
+# Icarus [![Build Status](https://travis-ci.org/mzabriskie/icarus.png?branch=master)](https://travis-ci.org/mzabriskie/icarus)
