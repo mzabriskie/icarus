@@ -9,8 +9,14 @@ module.exports = {
 		callback();
 	},
 
-	testGet: function (test) {
-		test.deepEqual(Config.get('icarus'), conf['icarus']);
+	testValue: function (test) {
+		test.equals(Config.value('foo'), conf['foo']);
+
+		test.done();
+	},
+
+	testModule: function (test) {
+		test.deepEqual(Config.module('icarus'), conf.modules['icarus']);
 
 		test.done();
 	}
