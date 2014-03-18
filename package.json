@@ -4,10 +4,12 @@
 	"description": "",
 	"author": "Matt Zabriskie",
 	"license": "MIT",
-	"main": "index.js",
+	"main": "lib/icarus.js",
 	"scripts": {
-		"test": "grunt jshint nodeunit",
-		"start": "node index"
+		"test": "grunt test"
+	},
+	"bin": {
+		"icarus": "bin/icarus"
 	},
 	"repository": {
 		"type": "git",

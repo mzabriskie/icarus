@@ -1,4 +1,6 @@
-var icarus = require('./lib/icarus'),
+#!/usr/bin/env node
+
+var icarus = require('../lib/icarus'),
 	argv = require('minimist')(process.argv.slice(2));
 
 // Clean the cache
